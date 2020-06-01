@@ -1,0 +1,3 @@
+rootProject.name='My Application'
+include ':app'
+include ':NIM_Android_UIKit-master'
