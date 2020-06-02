@@ -296,12 +296,15 @@ public class PinEntryEditText extends AppCompatEditText {
             } else {
                 startX += rtlFlag * (mCharSize + mSpace);
             }
-//            mCharBottom[i] =   mLineCoords[i].bottom - mTextBottomPadding;
+
             //增加计算字体的居中
             float multi = mContext.getResources().getDisplayMetrics().density;
             float size  =  getPaint().getTextSize() / multi;
-            mCharBottom[i] = mLineCoords[i].bottom - ((mLineCoords[i].bottom - mLineCoords[i].top)/2)+size;
-//            mCharBottom[i] = mLineCoords[i].bottom - ((mLineCoords[i].bottom - mLineCoords[i].top)/2);
+            if (mIsDigitSquare){
+                mCharBottom[i] = mLineCoords[i].bottom - ((mLineCoords[i].bottom - mLineCoords[i].top)/2)+size;
+            }else{
+                mCharBottom[i] =   mLineCoords[i].bottom - mTextBottomPadding;
+            }
         }
     }
 
