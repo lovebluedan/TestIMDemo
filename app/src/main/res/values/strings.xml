@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="circle_comment">你好，这个是动态，需要进行一个展示的动态，可能会有
+    礼物的展示，比如h5的一些假数据等等，但是你要正确的展示出来我的问题才不大</string>
+    <string name="circle_comment_long">你好，这个是动态，需要进行一个展示的动态，可能会有
+    礼物的展示，比如h5的一些假数据等等，但是你要正确的展示出来我的问题才不大,但是你要正确的展示出来我的问题才不大
+    但是你要正确的展示出来我的问题才不大,
+    但是你要正确的展示出</string>
+    <string name="circle_comment_short">你好，这个是动态</string>
+    <string name="data_comment">02-21 20:20</string>
 </resources>

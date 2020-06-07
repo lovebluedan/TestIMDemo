@@ -17,4 +17,8 @@
         <attr name="pinBackgroundDrawable" format="reference" />
         <attr name="pinBackgroundIsSquare" format="boolean" />
     </declare-styleable>
+
+    <declare-styleable name="TwoFlowCustomView">
+        <attr name="interval" format="integer"/>
+    </declare-styleable>
 </resources>

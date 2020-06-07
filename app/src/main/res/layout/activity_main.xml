@@ -8,42 +8,88 @@
     android:background="#FFFFFF"
     tools:context=".MainActivity"
     >
-<!--
-    pinBackgroundDrawable 背景的drawable 可以使用selector xml 如果有设置了这个属性则pinLineColors失效
-    pinBackgroundIsSquare 是否使用正方形
-    pinTextBottomPadding 字体的间隔 我现在已经取消了 这个属性已经无效。
-    pinLineColors 画线条的颜色 如果有设置了 pinBackgroundDrawable
-
--->
-    <com.example.myapplication.edit.PinEntryEditText
-        android:id="@+id/et_pwd"
+    <com.example.myapplication.weight.TwoFlowCustomView
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="35dp"
-        android:layout_marginRight="35dp"
-        android:background="@color/white"
-        android:digits="0123456789"
-        app:pinBackgroundDrawable="@drawable/shape_white"
-        android:inputType="number"
-        android:maxLength="5"
-        android:textColor="@color/color_131010"
-        android:textSize="20sp"
-        android:visibility="visible"
-        app:pinBackgroundIsSquare="true"
-        app:pinTextBottomPadding="17.5dp"
-        app:pinCharacterSpacing="14dp"
-        app:pinLineColors="@color/select_colors_list" />
-<!--    <com.jungly.gridpasswordview.GridPasswordView-->
-<!--        android:id="@+id/gpv_code"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="72dp"-->
-<!--        app:gpvPasswordLength="5"-->
-<!--        app:gpvTextColor="#1E2126"-->
-<!--        app:gpvTextSize="24sp"-->
-<!--        app:gpvGridColor="@color/color_262626"-->
-<!--        app:layout_constraintLeft_toLeftOf="parent"-->
-<!--        app:layout_constraintRight_toRightOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/tv_phone_hint" />-->
+        android:layout_height="wrap_content"
+        app:interval="20"
+        >
 
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/circle_comment_long"
+            android:textColor="#333333"
+            android:textSize="11sp"
+            />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:text="@string/data_comment"
+            android:textColor="#CCCCCC"
+            android:textSize="10sp"
+            />
+
+    </com.example.myapplication.weight.TwoFlowCustomView>
+
+    <com.example.myapplication.weight.TwoFlowCustomView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:interval="20"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/circle_comment"
+            android:textColor="#333333"
+            android:textSize="11sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:text="@string/data_comment"
+            android:textColor="#CCCCCC"
+            android:textSize="10sp"
+            />
+    </com.example.myapplication.weight.TwoFlowCustomView>
+
+    <com.example.myapplication.weight.TwoFlowCustomView
+        android:layout_width="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_height="wrap_content"
+        app:interval="20"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/circle_comment_short"
+            android:textColor="#333333"
+            android:textSize="11sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:text="@string/data_comment"
+            android:textColor="#CCCCCC"
+            android:textSize="10sp"
+            />
+    </com.example.myapplication.weight.TwoFlowCustomView>
 </LinearLayout>
